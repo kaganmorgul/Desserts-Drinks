@@ -1,0 +1,86 @@
+.sepet{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.header{
+    width: 100%;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.sepet-icerik{
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 5px;
+    position: absolute;
+    top:17%;
+    color: #fff;
+    right: 50px;
+    padding: 5px;
+    box-shadow: 0px 5px 10px grey;
+    z-index: 1;
+}
+.sepet-control{
+    display: flex;
+}
+.sepet-control button{
+    margin: 5px;
+}
+.sepet-control h6{
+    margin: 5px;
+}
+.sepet-listesi{
+    padding: 5px;
+}
+.sepet-listesi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.sepet-listesi li {
+    width: 90%;
+    margin: 2px;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    border-radius: 3px;
+    border-bottom: 1px solid grey;
+    padding: 3px;
+}
+.sepet-listesi li:hover{
+color: #fff;
+background-color: rgb(196, 196, 196);
+}
+.control-button button{
+ transition: all 2s;
+ border-width: 3px;
+ position: relative;
+ font-weight: bold;
+}
+.control-button button:after{
+    content: "";
+    position: absolute;
+    background-color: grey;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 1s;
+}
+.control-button button:hover::after{
+    width: 100%;
+}
+.fa-trash:hover{
+    transform: scale(1.1);
+}
+.sepetTutari{
+    border-bottom: 1px solid rgb(165, 165, 165);
+    padding: 4px;
+}
+.deleteallbutton{
+    color: #fff;
+}
